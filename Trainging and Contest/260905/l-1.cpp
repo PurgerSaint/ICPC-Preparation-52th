@@ -7,6 +7,6 @@ using ll = long long;
 
 int main() {
     ios;
-    
+    cout << 1;
     return 0;
 }
