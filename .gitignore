@@ -2,3 +2,8 @@ mingw64/
 .vscode/
 test/
 *.exe
+
+Data/
+论文/
+THU/
+zs/
