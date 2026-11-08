@@ -7,9 +7,16 @@ using ll = long long;
 
 int main() {
     ios;
-    for (int i = 1; i <= 32; i++) {
-        bitset<8> b = bitset<8>(i);
-        cout << i << " " << b.to_string() << "\n";
+    ll n; cin >> n;
+    vector<bool> f(n + 1, 0);
+    int cnt = 0;
+    for (ll i = 2; i <= n; i++) {
+        if (f[i]) continue;
+        cnt++;
+        cout << i << " ";
+        for (ll j = 2; i * j <= n; j++)
+            f[i * j] = 1;
     }
+    cout << "\n" << "cnt:" << cnt;
     return 0;
 }
